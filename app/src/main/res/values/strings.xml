@@ -3,4 +3,13 @@
     <string name="examen_admisión">EXAMEN DE ADMISIÓN UNTELS 2024</string>
     <string name="apellidos_nombre">Apellidos y Nombre</string>
     <string name="apellidos_y_nombre">Apellidos y Nombre:</string>
+    <string name="apellidosnombres" />
+    <string name="correo">Correo Electrónico:</string>
+    <string name="clave">Clave:</string>
+    <string name="carrera">Carrera:</string>
+    <string name="RB_IET">Ingeniería Electrónica y Telecomunicaciones</string>
+    <string name="RB_IS">Ingeniería de Sistemas</string>
+    <string name="RB_IA">Ingeniería Ambiental</string>
+    <string name="RB_IM">Ingeniería Mecánica</string>
+    <string name="RB_AE">Administración de Empresas</string>
 </resources>

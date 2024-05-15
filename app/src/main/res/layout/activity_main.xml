@@ -4,4 +4,188 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"/>
+    android:background="#2C528C"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="336dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="40dp"
+        android:background="#FFC107"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/examen_admisión"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textIsSelectable="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/apellidos_y_nombre"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="199dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/apellidosnombres"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.55" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/correo"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="199dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/clave"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView7"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/carrera"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <RadioGroup
+        android:id="@+id/GrupoCarrerasBoton"
+        android:layout_width="253dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+        <RadioButton
+            android:id="@+id/radioButtonIET"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:buttonTint="#FFC107"
+            android:shadowColor="#FFC107"
+            android:text="@string/RB_IET"
+            android:textColor="@color/white"
+            android:textColorHighlight="#FFC107"
+            android:textColorHint="#FFC107"
+            android:textColorLink="#FFC107"
+            android:textSize="10sp"
+            app:useMaterialThemeColors="true" />
+
+        <RadioButton
+            android:id="@+id/radioButtonIS"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:buttonTint="#FFC107"
+            android:shadowColor="#FFC107"
+            android:text="@string/RB_IS"
+            android:textColor="@color/white"
+            android:textColorHighlight="#FFC107"
+            android:textColorHint="#FFC107"
+            android:textColorLink="#FFC107"
+            android:textSize="10sp"
+            app:useMaterialThemeColors="true" />
+
+        <RadioButton
+            android:id="@+id/radioButtonIA"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:buttonTint="#FFC107"
+            android:shadowColor="#FFC107"
+            android:text="@string/RB_IA"
+            android:textColor="@color/white"
+            android:textColorHighlight="#FFC107"
+            android:textColorHint="#FFC107"
+            android:textColorLink="#FFC107"
+            android:textSize="10sp"
+            app:useMaterialThemeColors="true" />
+
+        <RadioButton
+            android:id="@+id/radioButtonIM"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:buttonTint="#FFC107"
+            android:shadowColor="#FFC107"
+            android:text="@string/RB_IM"
+            android:textColor="@color/white"
+            android:textColorHighlight="#FFC107"
+            android:textColorHint="#FFC107"
+            android:textColorLink="#FFC107"
+            android:textSize="10sp"
+            app:useMaterialThemeColors="true" />
+
+        <RadioButton
+            android:id="@+id/radioButtonAE"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:buttonTint="#FFC107"
+            android:shadowColor="#FFC107"
+            android:text="@string/RB_AE"
+            android:textColor="@color/white"
+            android:textColorHighlight="#FFC107"
+            android:textColorHint="#FFC107"
+            android:textColorLink="#FFC107"
+            android:textSize="10sp"
+            app:useMaterialThemeColors="true" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

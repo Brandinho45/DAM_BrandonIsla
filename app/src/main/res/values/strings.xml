@@ -12,4 +12,14 @@
     <string name="RB_IA">Ingeniería Ambiental</string>
     <string name="RB_IM">Ingeniería Mecánica</string>
     <string name="RB_AE">Administración de Empresas</string>
+    <string name="FechaNacimiento">"Fecha de Nacimiento: "</string>
+    <string name="Fecha">Fecha de Nacimiento:</string>
+    <string name="FechadeNacimiento" />
+    <string name="pregunta1">¿Por qué medio se enteró de la convocatoria?</string>
+    <string name="boxRadio">Radio</string>
+    <string name="boxInternet">Internet</string>
+    <string name="boxAmigo" />
+    <string name="BoxAmigo">Amigo</string>
+    <string name="boxPublicidad">Publicidad</string>
+    <string name="boton_enviar">Enviar</string>
 </resources>

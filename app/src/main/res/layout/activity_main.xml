@@ -5,13 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#2C528C"
+    android:foregroundTint="#FFC107"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="336dp"
-        android:layout_height="52dp"
+        android:layout_width="299dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
         android:background="#FFC107"
         android:gravity="center_horizontal|center_vertical"
         android:text="@string/examen_admisión"
@@ -29,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:text="@string/apellidos_y_nombre"
         android:textColor="@color/white"
         android:textStyle="bold"
@@ -41,6 +44,8 @@
         android:layout_width="199dp"
         android:layout_height="39dp"
         android:layout_marginStart="20dp"
+        android:backgroundTint="#FFC107"
+        android:drawableTint="#FFC107"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/apellidosnombres"
@@ -55,7 +60,7 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="25dp"
         android:text="@string/correo"
         android:textColor="@color/white"
         android:textStyle="bold"
@@ -67,6 +72,8 @@
         android:layout_width="199dp"
         android:layout_height="38dp"
         android:layout_marginStart="20dp"
+        android:backgroundTint="#FFC107"
+        android:drawableTint="#FFC107"
         android:ems="10"
         android:inputType="textEmailAddress"
         android:textColor="@color/white"
@@ -79,7 +86,7 @@
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="25dp"
         android:text="@string/clave"
         android:textColor="@color/white"
         android:textStyle="bold"
@@ -91,6 +98,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
+        android:backgroundTint="#FFC107"
+        android:drawableTint="#FFC107"
         android:ems="10"
         android:inputType="textPassword"
         android:textColor="@color/white"
@@ -103,18 +112,18 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="15dp"
         android:text="@string/carrera"
         android:textColor="@color/white"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/textView7"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintStart_toStartOf="@+id/Fecha"
+        app:layout_constraintTop_toBottomOf="@+id/Fecha" />
 
     <RadioGroup
         android:id="@+id/GrupoCarrerasBoton"
         android:layout_width="253dp"
         android:layout_height="152dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="1dp"
         app:layout_constraintStart_toStartOf="@+id/textView8"
         app:layout_constraintTop_toBottomOf="@+id/textView8">
 
@@ -188,4 +197,138 @@
             android:textSize="10sp"
             app:useMaterialThemeColors="true" />
     </RadioGroup>
+
+    <TextView
+        android:id="@+id/Fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/Fecha"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <EditText
+        android:id="@+id/Fecha_Nacimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="#FFC107"
+        android:drawableTint="#FFC107"
+        android:ems="10"
+        android:inputType="date"
+        android:textColor="@color/white"
+        android:textColorHighlight="#FFC107"
+        android:textColorHint="#FFC107"
+        android:textColorLink="#FFC107"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Fecha"
+        app:layout_constraintStart_toEndOf="@+id/Fecha"
+        app:layout_constraintTop_toTopOf="@+id/Fecha"
+        tools:text="@string/FechadeNacimiento" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/pregunta1"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/GrupoCarrerasBoton"
+        app:layout_constraintTop_toBottomOf="@+id/GrupoCarrerasBoton" />
+
+    <CheckBox
+        android:id="@+id/checkBoxRadio"
+        android:layout_width="86dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="5dp"
+        android:buttonTint="#FFC107"
+        android:text="@string/boxRadio"
+        android:textColor="@color/white"
+        android:textColorHighlight="#FFC107"
+        android:textColorLink="#FFC107"
+        android:textSize="10sp"
+        app:buttonIconTint="#FFC107"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <CheckBox
+        android:id="@+id/checkBoxInternet"
+        android:layout_width="87dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="5dp"
+        android:buttonTint="#FFC107"
+        android:text="@string/boxInternet"
+        android:textColor="@color/white"
+        android:textColorHighlight="#FFC107"
+        android:textColorLink="#FFC107"
+        android:textSize="10sp"
+        app:buttonIconTint="#FFC107"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxRadio"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxRadio" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPublicidad"
+        android:layout_width="109dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="5dp"
+        android:buttonTint="#FFC107"
+        android:text="@string/boxPublicidad"
+        android:textColor="@color/white"
+        android:textColorHighlight="#FFC107"
+        android:textColorLink="#FFC107"
+        android:textSize="10sp"
+        app:buttonIconTint="#FFC107"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxAmigo"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxAmigo" />
+
+    <CheckBox
+        android:id="@+id/checkBoxAmigo"
+        android:layout_width="80dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="5dp"
+        android:buttonTint="#FFC107"
+        android:text="@string/BoxAmigo"
+        android:textColor="@color/white"
+        android:textColorHighlight="#FFC107"
+        android:textColorLink="#FFC107"
+        android:textSize="10sp"
+        app:buttonIconTint="#FFC107"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxInternet"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxInternet" />
+
+    <Button
+        android:id="@+id/buttonEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="#FFC107"
+        android:backgroundTint="#FFC107"
+        android:drawableLeft="@drawable/baseline_content_paste_go_24"
+        android:foregroundTint="#FFC107"
+        android:shadowColor="#FFC107"
+        android:text="@string/boton_enviar"
+        android:textColor="@color/white"
+        android:textColorHighlight="#FFC107"
+        android:textColorHint="#FFC107"
+        android:textColorLink="#FFC107"
+        android:textStyle="bold"
+        app:iconTint="#FFC107"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxPublicidad"
+        app:strokeColor="#FFC107" />
+
+    <ImageView
+        android:id="@+id/imageuntels"
+        android:layout_width="66dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEnviar"
+        app:srcCompat="@drawable/untels" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
